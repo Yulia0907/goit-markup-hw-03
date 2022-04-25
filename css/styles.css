@@ -1,0 +1,151 @@
+:root {
+    --brand-color: #212121;
+    --brand-second-color: #757575;
+    --brand-btn-background: #2196F3;
+    --logo-color: #FFFFFF;
+    --banner-background: #2F303A;
+    --team-background: #F5F4FA;
+}
+ul { list-style: none; }
+a { text-decoration-line: none; }
+img {
+    display: block;
+    max-width: 100%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--brand-color);
+    letter-spacing: 0.03em;
+}
+
+/* Шрифты для хедера (шапки) */
+.header { background-color: var(--logo-color); }
+
+.logo, .logo-d, .logo-l {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--brand-btn-background);
+}
+.logo-d { color: #000000; }
+.logo-l { color: var(--logo-color); }
+
+.header-nav-link, .header-contacts-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--brand-color);
+}
+.header-contacts-link { color: var(--brand-second-color); }
+
+.header-nav-link:hover, .header-nav-link:focus, 
+.header-contacts-link:hover, .header-contacts-link:focus,
+.footer-contacts-item:hover, .footer-contacts-item:focus
+{ color: var(--brand-btn-background); }
+
+/* Секция заказ услуги(баннер) */
+.banner {
+    background-color: var(--banner-background);
+    letter-spacing: 0.06em;
+    color: var(--logo-color);
+}
+.banner-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    text-align: center;
+}
+.banner-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    background-color: var(--brand-btn-background);
+    cursor: pointer;
+    color: var(--logo-color);
+    text-align: center;
+}
+
+/* Секция с преимуществом студии */
+.features-title, .features-text {  
+    font-size: 14px;
+    line-height: 1.14;
+}
+.features-title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.features-text {
+    color: var(--brand-second-color);
+}
+
+/* Чем занимаемся */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+}
+
+/* Наша команда */
+.team { background-color: var(--team-background); }
+.team-title, .team-text {
+ font-weight: 500;
+font-size: 16px;
+line-height: 1.19; 
+}
+.team-title { line-height: 1.19; }
+.team-text { color: var(--brand-second-color); }
+
+/* Шрифты для футера(подвала) */
+.footer {
+    background-color: var(--banner-background);
+}
+.footer-address, .footer-contacts-item {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;   
+}
+.footer-address {
+color: var(--logo-color);
+}
+.footer-contacts-item {
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* CSS для портфолио */
+.filtr-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    background-color: var(--team-background);
+    color: var(--brand-color);
+
+}
+.filtr-button:hover, .filtr-button:focus {
+    color: var(--logo-color);
+    background-color: var(--brand-btn-background);
+}
+
+.portfolio-title {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--brand-color);
+}
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--brand-second-color);
+}
