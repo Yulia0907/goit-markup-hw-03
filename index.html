@@ -11,30 +11,33 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
+">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- Шапка (Хедер)-->
     <header class="header">
-        <nav>
-            <a href="./index.html" lang="en" class="logo">Web<span class="logo-d">Studio</span></a>
-            <ul class="header-nav">
-                <li><a href="./index.html" style="color:#2196F3;" class="header-nav-link">Студия</a></li>
-                <li><a href="./portfolio.html" class="header-nav-link">Портфолио</a></li>
-                <li><a href="#" class="header-nav-link">Контакты</a></li>
+            <nav class="header-nav-logo">
+                <a href="./index.html" lang="en" class="logo">Web<span class="logo-d">Studio</span></a>
+                <ul class="header-nav">
+                    <li class="item"><a href="./index.html" style="color:#2196F3;" class="header-nav-link">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="header-nav-link">Портфолио</a></li>
+                    <li class="item"><a href="#" class="header-nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="header-contacts">
+                <li class="item"> <a href="mailto:info@devstudio.com" class="header-contacts-link"> info@devstudio.com</a> </li>
+                <li class="item"> <a href="tel:+380961111111" class="header-contacts-link">+38 096 111 11 11</a> </li>
             </ul>
-        </nav>
-        <ul class="header-contacts">
-            <li> <a href="mailto:info@devstudio.com" class="header-contacts-link"> info@devstudio.com</a> </li>
-            <li> <a href="tel:+380961111111" class="header-contacts-link">+38 096 111 11 11</a> </li>
-        </ul>
     </header>
 <main>
-        <section class="banner">
+        <section class="banner"> 
             <h1 class="banner-title"> Эффективные решения <br> для вашего бизнеса </h1>
-            <button type="button" class="banner-button"> Заказать услугу </button>
+            <button type="button" class="banner-button"> Заказать услугу </button> 
         </section>
         <section class="section">
+            <div class="container">
             <h2 hidden class="section-title">Наши преимущества</h2>
             <ul class="features">
                 <li class="features-item">
@@ -54,24 +57,30 @@
                     <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий. </p>
                 </li>
             </ul>
+            </div>
         </section>
         <section class="section">
+          
             <h2 class="section-title">Чем мы занимаемся</h2>
+            <div class="container">
             <ul class="works">
-                <li class="works-item">
+                <li class="works-item a">
                     <img src="./images/services/img.jpg" alt="работа за ноутбуком" width="370" height="294" />
                 </li>
                 <li class="works-item">
                     <img src="./images/services/box2.jpg" alt="синхронизациятелефона с ноутбуком" width="370" height="294" />
                 </li>
-                <li class="works-item">
+                <li class="works-item c">
                     <img src="./images/services/box3.jpg" alt="выбор цвета" width="370" height="294" />
                 </li>
             </ul>
+            </div>
         </section>
         <section class="section">
-            <h2 class="section-title">Наша команда</h2>
-            <ul class="team">
+        
+            <h2 class="section-title team">Наша команда</h2>
+            <div class="container"></div>
+            <ul class="teams">
                 <li class="team-item">
                     <img src="./images/team/img1.jpg" alt="дизайнер" width="270" height="260" />
                     <h3 class="team-title">Игорь Демьяненко</h3>
@@ -93,6 +102,7 @@
                     <p lang="en" class="team-text">UI Designe</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 
