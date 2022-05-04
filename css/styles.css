@@ -14,6 +14,9 @@ html {
     --logo-color: #FFFFFF;
     --banner-background: #2F303A;
     --team-background: #F5F4FA;
+    --border-coor: #ECECEC;
+    
+
 }
 
 /* Селекторы тегов */
@@ -51,7 +54,7 @@ body {
 
 /* Шрифты для хедера (шапки) */
 .header { 
-    border-bottom: 1px solid #ECECEC;
+    border-bottom: 1px solid var(--border-coor);
     background-color: var(--logo-color);
 }
 .nav, .header-nav-logo, .logo, .header-contacts, .header-nav {
@@ -267,7 +270,7 @@ body {
     margin-bottom: 0;
 }
 .footer-contacts-item {
-    letter-spacing: 00.03em;
+    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -292,7 +295,7 @@ body {
     background-color: var(--team-background);
     border: rgba(0, 0, 0, 0.25);
     
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
